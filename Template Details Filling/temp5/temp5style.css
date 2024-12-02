@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: lavender;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
+}
+
+.nav-item1 a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-item1 {
+    height: 20px;
+    background-color: rgb(131, 33, 223);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.nav-item2 {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;;
+}
+
+.nav-item2 a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-dash {
+    background-color: rgb(131, 33, 223);
+    width: fit-content;
+    padding: 15px;
+    height: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.nav-down {
+    background-color: rgb(131, 33, 223);
+    width: fit-content;
+    padding: 15px;
+    height: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+.form-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+
+#temp-image {
+    height: 600px;
+    width: 500px;
+    display: block;
+    border:2px solid rgb(131, 33, 223);
+}
+
+
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+#field{
+    background-color: #e5e5f0;
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #f4f4f5;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+input[type="file"] {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 100px;
+    margin-bottom: 20px;
+    width: 550px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(131, 33, 223);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* button:hover {
+    background-color: #333;
+} */
+
+label {
+    padding-top: 10px;
+}
+
+input {
+    width: 550px;
+}
+
+#fixed-column p {
+    padding-top: 5px;
+}
+
+
+#fixed-column {
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+
+#fixed-column h3 {
+    color: rgb(20,151,255);
+    font-size: 30px;
+    margin: 15px 0;
+    position: relative;
+    font-weight: bold;
+}
+
+
+#fixed-column p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#fixed-column h4 {
+    color:rgb(20,151,255);
+    font-size: 18px;
+    margin: 15px 0;
+    position: relative;
+    text-align: right;
+}
+
+#fixed-column #section{
+    display: flex;
+    justify-content: space-around;
+}
+
+#fixed-column #div1{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+#fixed-column #div2{
+    width:72%;
+    display: flex;
+    
+}
+
+#fixed-column .square {
+    margin-top: 16px;
+    margin-bottom: 5px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(20,151,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    transform: rotate(45deg);
+}
+
+#fixed-column .square #letter{
+    transform: rotate(-45deg);
+}
+
+#div2 .section {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#div2 .middle {
+    /* width: 3%; */
+    position: relative;
+}
+
+#div2 .rhombus {
+    margin-top:30px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(20,151,255);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 2;
+}
+
+#div2 .line {
+    margin-top:30px;
+    width: 2px;
+    background-color: #989797;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 95%; /* Adjust height as needed */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    *,
+    body {
+        overflow-x: hidden;
+    }
+
+    #fixed-column {
+        display: none;
+    }
+
+    /* FORM SECTION */
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #fixed-column {
+        display: none;
+    }
+}

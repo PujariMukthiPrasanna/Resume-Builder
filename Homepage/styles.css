@@ -1,0 +1,1343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', monospace;
+}
+
+/* NAVBAR */
+
+
+.navbar {
+    list-style: none;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.nav-logo{
+    padding: 13px 25px;
+    font-size: 30px;
+    color: #000;
+}
+
+
+.navbar .nav-items ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .nav-items ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar .nav-items ul li ul.dropdown li {
+    display: block;
+}
+
+.navbar .nav-items ul li ul.dropdown {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navbar .nav-items ul li a:hover {
+    background: rgb(131, 33, 223);
+    color: #fff;
+}
+
+.navbar .nav-items ul li:hover ul.dropdown {
+    display: block;
+}
+
+.nav-items{
+    display: flex;
+}
+
+/* NAVBAR */
+
+/* SIDEBAR */
+
+.sidebar-button{
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+
+.sidebar-toggle{
+    border: none;
+    font-size: 25px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sidebar-toggle:hover {
+    color: var(--clr-primary-7);
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #8c52ff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar-header p{
+    font-size: 30px;
+}
+
+.close-btn {
+    font-size: 1.75rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+    cursor: pointer;
+    color: var(--clr-red-dark);
+}
+
+.close-btn:hover {
+    color: var(--clr-red-light);
+    transform: rotate(360deg);
+}
+
+.links a {
+    display: block;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    color: var(--clr-grey-5);
+    transition: var(--transition);
+}
+
+.links a:hover {
+    background-color: blueviolet;
+    padding-left: 1.75rem;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: lavender;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow: var(--clr-red-dark);
+    transition: var(--transition);
+    transform: translate(-100%);
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+.sidebar ul li{
+    list-style: none;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+}
+
+.sidebar-foot{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.sidebar-foot-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SIDEBAR */
+
+/* HERO SECTION */
+
+.hero-section{
+    height: 405px;
+    width:100%;
+    background-color: lavender;
+    display: grid;
+    justify-content: center;
+}
+
+#hero-button{
+    font-size: 30px;
+    background-color:  rgb(131, 33, 223);
+    color:#fff;
+    height:60px;
+    width:300px;
+    font-weight: bold;
+    border: none;
+}
+
+.hero{
+    font-size:50px;
+    padding-top: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#hero-button {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 10px;
+    border-color: #6d30e9;
+    border-width: 20px;
+}
+#hero-button:hover {
+    background-color:rgb(131, 33, 223);
+    color: #fff;
+    font-size: 30px;
+    transform: scale(1.05); 
+    box-shadow: 0 20px 40px rgba(121, 18, 217, 0.7); 
+    border-radius: 10px;
+}
+
+/* STEPS OF RESUME BUILDING SECTION */
+
+.steps-section{
+    padding-top: 30px;
+    height:400px;
+    width:100%;
+    padding-bottom: 50px;
+}
+
+.steps-section-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 35%;
+    padding-right: 25%;
+    padding-top: 20px;
+}
+
+.nos{
+    display: grid;
+    align-items:center ;
+    justify-content: space-between;
+    height: 400px;
+    font-size: 50px;
+    color: rgb(131, 33, 223);
+}
+
+.steps{
+    display: grid;
+    align-items:center ;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.step-heading{
+    font-size: 30px;
+    color: rgb(131, 33, 223);
+    font-weight: bold;
+}
+
+/* FEATURED SECTION */
+
+.featured-section{
+    height: 1550px;
+    width:100%;
+    background-color: #fff;
+}
+
+.featured-images{
+    padding-top:80px;
+    padding-left:200px;
+    padding-right:200px;
+}
+
+.featured-heading{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+    height: 650px;
+}
+
+.copy-wrap{
+    width: 50%;
+    padding-left:77px;
+    padding-right:77px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.copy-wrap h3{
+    padding-bottom: 10px;
+}
+.copy-wrap p{
+    padding-bottom: 20px;
+}
+
+.img-wrap{
+    width: 50%;
+    padding-left:77px;
+    padding-right:77px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: lavender;
+}
+
+.temp-img{
+    height: 550px;
+    width: 400px;
+}
+
+.temp-button {
+    font-size: 16px;
+    background-color:rgb(131, 33, 223);
+    color: #fff;
+    height:55px;
+    width:250px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 10px;
+    border-color: #6d30e9;
+    border-width: 20px;
+}
+
+/* REVIEWS SECTION */
+
+#reviews {
+    padding: 20px;
+    background-color: #fff;
+    display: grid;
+    justify-content: center;
+}
+
+#reviews h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    color: rgb(131, 33, 223);
+}
+
+
+.slider {
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgb(131, 33, 223); 
+    padding: 10px;
+    display: none;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.card.active {
+    display: block;
+}
+
+
+.card h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+.card h4{
+    font-weight: 100;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows button {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(131, 33, 223);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* RESUME TEMPLATES QUEUE SECTION */
+.queue-section {
+    height: 80vh; 
+    width: 100%;
+    background-color: lavender;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.queue-columns{
+width:520px;
+display: flex;
+justify-content: space-around;
+padding-right: 150px;
+
+}
+
+#queue-animation1 {
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 7px;
+}
+
+.columns1 {
+    display: flex;
+    width: 200%;
+    animation: queue1 20s linear infinite ; 
+}
+
+.column1 {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+.column1 img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+@keyframes queue1 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%); 
+    }
+}
+
+
+#queue-animation2 {
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.columns2 {
+    display: flex;
+    width: 200%;
+    animation: queue2 20s linear infinite reverse ; 
+}
+
+.column2 {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.column2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes queue2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%); 
+    }
+}
+
+.container{
+    padding: 100px;
+
+}
+
+.flex{
+    align-items: center;
+    display: grid;
+    justify-content: center;
+
+}
+
+.font-header{
+    font-size: 50px;
+    color: rgb(131, 33, 223);
+}
+
+
+
+/* RESUME SAMPLES LINK */
+
+.resume-samples{
+    height:350px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.resume-sample-items{
+    justify-content: center;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#sample-page-link{
+    height:70px;
+    width: 400px;
+    font-size: 20px;    
+    background-color: rgb(131, 33, 223);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+
+#line1{
+    font-size: 55px;
+    padding-bottom: 10px;
+    color: rgb(131, 33, 223);
+}
+
+#line2{
+    font-size: 15px;
+    padding-bottom: 50px;
+    color: rgb(131, 33, 223);
+}
+
+#sample-page-link {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 10px;
+    border-color: #6d30e9;
+    border-width: 20px;
+}
+#sample-page-link:hover {
+    background-color:rgb(131, 33, 223);
+    color: #fff;
+    font-size: 20px;
+    transform: scale(1.05); 
+    box-shadow: 0 6px 40px rgb(131, 33, 223); 
+    border-radius: 10px;
+
+}
+
+/* FOOTER */
+
+.footer{
+    height: 230px;
+    width: 100%;
+    background-color: black;
+}
+
+.main-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.logo{
+    color: #fff;
+    font-size: 70px;
+}
+
+.right-footer{
+    display: flex;
+    justify-content: end;
+}
+
+#footer-headings{
+    color: #fff;
+    padding-bottom: 30px;
+    width:200px;
+}
+
+.resume{
+    display: grid;
+    justify-content: center;
+    text-align: left;
+} 
+
+.Legal-Contact{
+    display: grid;
+    text-align: left;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100px;
+}
+
+a{
+    color:#fff;
+}
+
+
+
+
+    @media screen and (max-width: 820px) {
+        body{
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR SECTION */
+
+        .navbar {
+            flex-direction: column;
+            height: auto;
+        }
+    
+        .nav-logo {
+            text-align: center;
+            padding: 20px 0;
+        }
+    
+        .nav-items {
+            display: none;
+        }
+
+        .links li a{
+            display: none;
+        }
+    
+        .navbar .nav-items ul li {
+            display: block;
+        }
+    
+        .navbar .nav-items ul li a {
+            padding: 10px 0;
+            font-size: 18px;
+        }
+    
+        .navbar .nav-items ul li ul.dropdown {
+            width: auto;
+            background: rgb(131, 33, 223);
+            position: relative;
+            display: none;
+        }
+    
+        .navbar .nav-items ul li ul.dropdown li {
+            display: block;
+        }
+    
+        /* SIDEBAR SECTION */
+
+        .sidebar-button {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 15px;
+            text-align: center;
+        }
+    
+        .sidebar-toggle {
+            font-size: 25px;
+        }
+
+        .sidebar-foot{
+            background-color: lavender;
+            height: 100px;
+        }
+
+        .sidebar-foot-links{
+            display: flex;
+        }
+
+
+        /* HERO SECTION */
+
+        .hero-section {
+            height: auto;
+        }
+    
+        .hero {
+            font-size: 36px;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        #hero-button {
+            font-size: 24px;
+            width: 200px;
+            height: 50px;
+        }
+
+        #hero-button:hover{
+            font-size: 25px;
+        }
+
+        /* STEPS SECTION */
+    
+        .steps-section {
+            padding: 20px;
+            height: 500px;
+        }
+    
+        .steps-section-items {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 15%;
+                padding-right: 15%;
+                padding-top: 20px;
+        
+        }
+    
+        .nos {
+            font-size: 24px;
+        }
+    
+        .steps {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    
+        .step-heading {
+            font-size: 24px;
+        }
+
+        /* FEATURED SECTION */
+
+        .featured-section {
+            height: auto; 
+            width: 100%;
+            background-color: #fff;
+        }
+    
+        .featured-images {
+            padding-top: 40px; 
+            padding-left: 20px;
+            padding-right: 20px; 
+        }
+    
+        .featured-heading {
+            font-size: 24px; 
+            padding-bottom: 20px; 
+        }
+    
+        .block {
+            flex-direction: column;
+            align-items: center;
+            height: auto; 
+        }
+    
+        .copy-wrap {
+            width: 90%;
+            padding: 20px; 
+            align-items: center; 
+            text-align: center;
+        }
+    
+        .copy-wrap h3 {
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+    
+        .copy-wrap p {
+            font-size: 16px; 
+            padding-bottom: 10px; 
+        }
+    
+        .img-wrap {
+            width: 70%; 
+            padding: 20px; 
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        .temp-img {
+            height: auto; 
+            max-width: 100%; 
+        }
+    
+        .temp-button {
+            font-size: 16px;
+            height: 40px; 
+            width: fit-content; 
+        }
+
+        /* REVIEWS SECTION */
+
+        #reviews {
+            padding: 30px;
+        }
+    
+        #reviews h2 {
+            font-size: 24px;
+            padding-top: 10px;
+        }
+    
+        .slider {
+            width: 100%;
+            height: 300px; 
+            padding-top: 30px;
+        }
+    
+        .card {
+            width: 60%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    
+
+        /* RESUME TEMPLATES QUEUE SECTION */
+
+        .queue-section {
+            height: 400px;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    .container{
+        padding: 25px;
+        text-align: center;
+    }
+
+    .flex{
+        align-items: center;
+        display: grid;
+        justify-content: center;
+    }
+
+    .font-header{
+        font-size: 20px;
+        color: rgb(131, 33, 223);
+    }
+
+    .queue-columns{
+        width:320px;
+        padding-right: 15px;
+    }
+
+        /* RESUMES SAMPLE SECTION */
+        .resume-samples {
+            height: auto;  
+            width: 100%;
+            padding-top: 20px;  
+        }
+    
+        .resume-sample-items {
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;  
+        }
+    
+        #sample-page-link {
+            height: 50px;  
+            width: 80%; 
+            font-size: 16px; 
+        }
+    
+        #line1 {
+            font-size: 36px; 
+            padding-bottom: 10px;  
+        }
+    
+        #line2 {
+            font-size: 16px; 
+            padding-bottom: 20px; 
+        }
+
+        /* FOOTER SECTION */
+        .footer {
+            height: auto; 
+            padding: 20px 0;  
+            width: 100%;
+            align-items: center;
+        }
+    
+        .main-footer {
+            flex-direction: column;  
+            /* align-items: center; */
+            text-align: center;
+
+            padding: 0 20px;  
+        }
+
+        .right-footer{
+            display: grid;
+            justify-content: space-between;
+            text-align: center;
+        }
+    
+        .logo {
+            display: none;  
+        }
+    
+
+        #footer-headings {
+            padding-bottom: 10px; 
+            font-size: 18px;  
+        }
+    
+        .icons {
+            justify-content: center;
+            margin-top: 20px;  
+            align-items: center;
+            padding-left: 50px;
+        }
+    
+        a {
+            color: #fff;
+            margin: 0 10px; 
+        }
+
+        .resume{
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    }
+
+
+     @media screen and (max-width: 1050px) {
+        body {
+            overflow-x: hidden;
+        }
+
+        /* HERO SECTION */
+    
+        .hero-section {
+            height: auto;
+        }
+    
+        .hero {
+            font-size: 36px;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        #hero-button {
+            font-size: 24px;
+            width: 200px;
+            height: 50px;
+        }
+    
+        #hero-button:hover {
+            font-size: 25px;
+        }
+
+        .hero p{
+            padding-bottom: 20px;
+        }
+    
+        /* STEPS SECTION */
+    
+        .steps-section {
+            padding: 20px;
+            height: auto;
+        }
+    
+        .steps-section-items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 25%;
+            padding-right: 25%;
+            padding-top: 20px;
+        }
+    
+        .nos {
+            font-size: 24px;
+        }
+    
+        .steps {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    
+        .step-heading {
+            font-size: 24px;
+        }
+    
+        /* FEATURED SECTION */
+    
+        .featured-section {
+            height: auto;
+            width: 100%;
+            background-color: #fff;
+        }
+    
+        .featured-images {
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    
+        .featured-heading {
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+    
+        .block {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+    
+        .copy-wrap {
+            width: 90%;
+            padding: 20px;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .copy-wrap h3 {
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+    
+        .copy-wrap p {
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+    
+        .img-wrap {
+            width: 45%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        .temp-img {
+            height: auto;
+            max-width: 100%;
+        }
+    
+        .temp-button {
+            font-size: 16px;
+            height: 40px;
+            width: fit-content;
+        }
+    
+        /* REVIEWS SECTION */
+    
+        #reviews {
+            padding: 30px;
+        }
+    
+        #reviews h2 {
+            font-size: 24px;
+            padding-top: 10px;
+        }
+    
+        .slider {
+            width: 100%;
+            height: 300px;
+            padding-top: 30px;
+        }
+    
+        .card {
+            width: 60%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+    
+        /* RESUME TEMPLATES QUEUE SECTION */
+    
+        .queue-section {
+            height: 400px;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .container {
+            padding: 25px;
+            text-align: center;
+        }
+    
+        .flex {
+            align-items: center;
+            display: grid;
+            justify-content: center;
+        }
+    
+        .font-header {
+            font-size: 20px;
+            color: rgb(131, 33, 223);
+        }
+    
+        .queue-columns {
+            width: 320px;
+            padding-right: 15px;
+        }
+    
+        /* RESUMES SAMPLE SECTION */
+    
+        .resume-samples {
+            height: auto;
+            width: 100%;
+            padding-top: 20px;
+        }
+    
+        .resume-sample-items {
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+    
+        #sample-page-link {
+            height: 50px;
+            width: fit-content;
+            font-size: 16px;
+            padding: 10px;
+        }
+    
+        #line1 {
+            font-size: 36px;
+            padding-bottom: 10px;
+        }
+    
+        #line2 {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+    
+        /* FOOTER SECTION */
+    
+        .footer {
+            height: auto;
+            padding: 20px 0;
+            width: 100%;
+            align-items: center;
+        }
+    
+        .main-footer {
+            flex-direction: column;
+            text-align: center;
+            padding: 0 20px;
+        }
+    
+        .right-footer {
+            display: grid;
+            justify-content: space-between;
+            text-align: center;
+        }
+    
+        .logo {
+            display: none;
+        }
+    
+        #footer-headings {
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+    
+        .icons {
+            justify-content: center;
+            margin-top: 20px;
+            align-items: center;
+            padding-left: 50px;
+        }
+    
+        a {
+            color: #fff;
+            margin: 0 10px;
+        }
+    
+        .resume {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    }
+    
+
+    @media screen and (min-width:768px) and (max-width: 1300px) {
+        *, body{
+            overflow-x: hidden;
+        }
+
+        .navbar{
+            height: auto;
+        }
+
+        .nav-items{
+            height: auto;
+        }
+
+        .logo{
+            display: none;
+        }
+
+        .main-footer{
+            padding-left: 300px;
+        }
+
+                /* STEPS SECTION */
+    
+                .steps-section {
+                    padding: 20px;
+                    height: auto;
+                }
+            
+                .steps-section-items {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 25%;
+                    padding-right: 25%;
+                    padding-top: 20px;
+                }
+            
+                .nos {
+                    font-size: 24px;
+                }
+            
+                .steps {
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                }
+            
+                .step-heading {
+                    font-size: 24px;
+                }
+            
+                /* FEATURED SECTION */
+            
+                .featured-section {
+                    height: auto;
+                    width: 100%;
+                    background-color: #fff;
+                }
+            
+                .featured-images {
+                    padding-top: 40px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            
+                .featured-heading {
+                    font-size: 24px;
+                    padding-bottom: 20px;
+                }
+            
+                .block {
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                }
+            
+                .copy-wrap {
+                    width: 90%;
+                    padding: 20px;
+                    align-items: center;
+                    text-align: center;
+                }
+            
+                .copy-wrap h3 {
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                }
+            
+                .copy-wrap p {
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                }
+            
+                .img-wrap {
+                    width: 45%;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            
+                .temp-img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            
+                .temp-button {
+                    font-size: 16px;
+                    height: 40px;
+                    width: fit-content;
+                    padding: 8px;
+                }
+            
+                /* REVIEWS SECTION */
+            
+                #reviews {
+                    padding: 30px;
+                }
+            
+                #reviews h2 {
+                    font-size: 24px;
+                    padding-top: 10px;
+                }
+            
+                .slider {
+                    width: 100%;
+                    height: 300px;
+                    padding-top: 30px;
+                }
+            
+                .card {
+                    width: 60%;
+                    padding: 20px;
+                    margin: 0 auto;
+                }
+    }
+
+

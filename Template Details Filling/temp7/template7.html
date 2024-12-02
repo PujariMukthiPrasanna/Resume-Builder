@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="temp7style.css" />
+    <link rel="icon" type="image/png" href="../../favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../html2pdf.bundle.min.js"></script>
+    <script src="temp7script.js"></script>
+    <title>Boxed</title>
+</head>
+
+<body>
+    <section class="navbar">
+        <div class="nav-item1">
+            <a href="../../ResumeTemplates/templateselection.html"><i class="fa-sharp fa-solid fa-arrow-left"
+                    style="color: #ffffff; padding-right: 8px"></i>Resumes</a>
+        </div>
+        <div class="nav-item2">
+            <div class="nav-dash">
+                <a id="download-button">Download</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="form-section">
+            <form action="#" id="resume-form">
+                <fieldset id="field">
+                    <h3>Fill in the details</h3>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="fname" />
+
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" required />
+
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" required />
+
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" required />
+
+                    <label for="summary">Summary:</label>
+                    <textarea id="summary" required></textarea>
+                </fieldset>
+
+                <fieldset id="field">
+                    <h3>Work Experience</h3>
+                    <div id="work-experiences"></div>
+                    <button type="button" id="add-experience">+ Add Experience</button>
+                </fieldset>
+
+
+                <fieldset id="field">
+                    <h3>Education</h3>
+                    <div id="education-section"></div>
+                    <button type="button" id="add-education">+ Add Education</button>
+                </fieldset>
+
+
+                <fieldset id="field">
+                    <h3>Skills</h3>
+                    <div id="skills-section"></div>
+                    <button type="button" id="add-skills">+ Add Skills</button>
+                </fieldset>
+            </form>
+            <button type="button" id="preview-button" style="background-color: rgb(131, 33, 233)">
+                Preview
+            </button>
+        </div>
+
+        <div id="fixed-column">
+            <img id="temp-image" src="../../Resume Templates images/temp7.png" alt="Resume Template Image" />
+        </div>
+    </div>
+</body>
+
+</html>

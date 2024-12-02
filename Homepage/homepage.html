@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HomePage</title>
+    <link rel="icon" type="image/png" href="../favicon-16x16.png">
+</head>
+<body>
+    <section class="navbar">
+        <a href="../homepage/homepage.html">
+            <div class="nav-logo">
+                <p>RESUMEBUILDER</p>
+            </div>
+        </a>
+        <div class="nav-items">
+            <div class="nav-address">
+                <ul>
+                    <li>
+                        <a href="#">Resume ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="../ResumeTemplates/templateselection.html">Resume Templates</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="#">About Us</a></li> -->
+                    <li><a href="../contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-button">
+                <button class="sidebar-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <aside class="sidebar">
+                    <div class="sidebar-header">
+                        <p>RESUMEBUILDER</p>
+                        <button class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>                            
+                    </div>
+            
+                    <ul class="links">
+                    <li>
+                        <a href="homepage.html">home</a>
+                    </li>
+                    <li>
+                        <a href="../ResumeTemplates/templateselection.html">resumes</a>
+                    </li>
+                    <li>
+                        <a href="../aboutus.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="../contactus.html">ContactUs</a>
+                    </li>
+                    </ul>
+                    <hr>
+                    
+                    <div class="sidebar-foot">
+                        <div >
+                            <ul>
+                                <li>
+                                    <a href="#" onclick="logoutUser(); return false;">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-foot-links">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook" style="color: black;"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter" style="color: black;"></i></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram" style="color: black;"></i></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="hero">
+            <p style="padding-bottom: 60px;">MAKE YOUR PROFESSIONAL RESUME IN MINUTES FOR FREE</p>
+            <a href="../ResumeTemplates/templateselection.html" style="text-decoration: none;">
+                <button id="hero-button" >GET STARTED</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="steps-section">
+        <p style="text-align: center;font-size: 40px;">3 EASY STEPS TO BUILD YOUR RESUME:</p>
+        <div class="steps-section-items">
+            <div class="nos">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+            </div>
+
+            <div class="steps">
+                <div>
+                    <p class="step-heading">SELECT TEMPLATE</p>
+                    <p>Select the best template suitable for your dream job.</p>
+                </div>
+                <div>
+                    <p class="step-heading">FILL THE DETAILS</p>
+                    <p>Fill in the details required for your resume.</p>
+                </div>
+                <div>
+                    <p class="step-heading">DOWNLOAD</p>
+                    <p>Download your resume for free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+            <div class="featured-images">
+                <h2 class="featured-heading">Featured resume templates</h2>
+                <div class="featured-images-wrap">
+                    <div class="block">
+                        <div class="copy-wrap">
+                            <div>
+                                <h3 class="temp-name">Executive</h3>
+                                <p class="temp-text">An excellent choice for those with an extensive work history and clear career trajectory</p>
+                                <button class="temp-button"><a href="../Template Details Filling/temp2/template2.html" style="text-decoration: none;"><span>Start with this template</span></a></button>
+                            </div>
+                        </div>
+                        <div class="img-wrap">
+                            <img class="temp-img" src="../Resume Templates images/temp2.png">
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img-wrap">
+                            <img  class="temp-img"  src="../Resume Templates images/temp1.png">
+                        </div>
+                        <div class="copy-wrap">
+                            <div>
+                                <h3 class="temp-name">Modern</h3>
+                                <p class="temp-text">A clean style for those who prefer a striking design without a lot of distractions</p>
+                                <button class="temp-button"><a href="../Template Details Filling/temp1/template1.html" style="text-decoration: none;"><span>Start with this template</span></a></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="reviews">
+        <h2>What our customers are saying</h2>
+        <div class="slider">
+            <div class="cards">
+                <div class="card active">
+                    <p>Great tool for quickly creating compelling resumes and organizing your entire job search! Recommending to all my clients!</p>
+                    <h3>David</h3>
+                    <h4>Recruiter</h4>
+                </div>
+                <div class="card">
+                    <p>A must-have for creating professional resumes to impress employers and score interviews.</p>
+                    <h3>Kate</h3>
+                    <h4>Freelance Video Editor</h4>
+                </div>
+                <div class="card">
+                    <p>An easy-to-use and comprehensive platform that helps job seekers create stunning resumes.</p>
+                    <h3>Aaront</h3>
+                    <h4>Accountant</h4>
+                </div>
+                <div class="card">
+                    <p>Very helpful tool that is user-friendly, intuitive, and supports job seekers through the entire application process.</p>
+                    <h3>Jared</h3>
+                    <h4>Web Designer</h4>
+                </div>
+                <div class="card">
+                    <p>I got a job as a Principle Project Engineer at Physio-Control in Redmond, WA! I applied to the job posting and they called me. As they say the rest is history.</p>
+                    <h3>Chris</h3>
+                    <h4>Redmond, WA</h4>
+                </div>
+                <div class="card">
+                    <p>I got a job as a RN at Good hope home healthcare in Crystal lake, IL! This allowed interested employers to contact me, and saved me the hustle of filling out lengthy applications that led to nowhere.</p>
+                    <h3>A.K.</h3>
+                    <h4>Crystal Lake, IL</h4>
+                </div>
+                <div class="card">
+                    <p>I got a job as a Application Spectroscopist at Metrohm USA in Laurel, MD! I found the position by searching the job postings in my area. I applied for the job and was contacted for an interview. A few weeks later, after several interviews, I got an offer letter!</p>
+                    <h3>Keith</h3>
+                    <h4>Laurel, MD</h4>
+                </div>
+                <div class="card">
+                    <p>Great tool for quickly creating compelling resumes and organizing your entire job search! Recommending to all my clients!</p>
+                    <h3>David</h3>
+                    <h4>Recruiter</h4>
+                </div>
+                <div class="card">
+                    <p>A must-have for creating professional resumes to impress employers and score interviews.</p>
+                    <h3>Kate</h3>
+                    <h4>Freelance Video Editor</h4>
+                </div>
+        </div>
+        <div class="arrows">
+            <button id="prev">‹</button>
+            <button id="next">›</button>
+        </div>
+        </div>   
+    </section>
+
+    <section class="queue-section">
+
+        <div class="container ">
+            <div class="flex ">
+                <h2 class="font-header">Impress potential employers with your resume</h2>
+                <p class="text">Follow step-by-step professional guidance to create a polished resume in minutes.</p>
+            </div>
+        </div>
+
+        <div class="queue-columns">
+            <div id="queue-animation1">
+                <div class="columns1">
+                    <div class="column1">
+                        <img src="../Resume Templates images/temp1.png" alt="Image 1">
+                        <img src="../Resume Templates images/temp2.png" alt="Image 2">
+                        <img src="../Resume Templates images/temp3.png" alt="Image 3">
+                        <img src="../Resume Templates images/temp4.png" alt="Image 4">
+                        <img src="../Resume Templates images/temp5.png" alt="Image 5">
+                        <img src="../Resume Templates images/temp6.png" alt="Image 6">
+                        <img src="../Resume Templates images/temp7.png" alt="Image 7">
+                        <img src="../Resume Templates images/temp8.png" alt="Image 8">
+                    </div>
+                </div>
+            </div>
+            <div id="queue-animation2">
+                <div class="columns2">
+                    <div class="column2">
+                        <img src="../Resume Templates images/temp5.png" alt="Image 1">
+                        <img src="../Resume Templates images/temp6.png" alt="Image 2">
+                        <img src="../Resume Templates images/temp7.png" alt="Image 3">
+                        <img src="../Resume Templates images/temp8.png" alt="Image 4">
+                        <img src="../Resume Templates images/temp1.png" alt="Image 5">
+                        <img src="../Resume Templates images/temp2.png" alt="Image 6">
+                        <img src="../Resume Templates images/temp3.png" alt="Image 7">
+                        <img src="../Resume Templates images/temp4.png" alt="Image 8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume-samples">
+        <div class="resume-sample-items">
+            <p id="line1">Jump start your resume with 
+                resume templates</p>
+            <p id="line2">Don’t create your resume from scratch. Use one of our proven resume templates 
+                and kick start your search from the beginning.</p>
+                <a href="../ResumeTemplates/templateselection.html" style="text-decoration: none;">
+                    <button id="sample-page-link">Build a resume with a template</button>
+                </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="/scripts.js"></script>
+</body>
+
+<footer  class="footer">
+    <section class="main-footer">
+        
+        <div class="logo">
+            <p>RESUMEBUILDER.com</p>
+        </div>
+
+        <div class="right-footer">
+            <div class="resume">
+                <p id="footer-headings">Resume</p>
+                <p><a href="homepage.html" style="text-decoration: none;">Homepage</a></p>
+                <p><a href="../ResumeTemplates/templateselection.html" style="text-decoration: none;">Resume templates</a></p>
+            </div>
+            <div class="Legal-conatact">
+                <p id="footer-headings">Legal/Contact</p>
+                <p><a href="../aboutus.html" style="text-decoration: none;">AboutUs</a></p>
+                <p><a href="../contactus.html" style="text-decoration: none;">ContactUs</a></p>
+                <p><a href="termsofuse.html" style="text-decoration: none;">Terms Of Use</a></p>
+                <p><a href="privacy.html" style="text-decoration: none;">Privacy Policy</a></p>
+            </div>
+            <div class="social-links">
+                <p id="footer-headings">Stay Connected</p>
+                <div class="icons">
+                    <p><a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></p>
+                    <p><a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></i></a></p>
+                    <p><a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></i></a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+</html>

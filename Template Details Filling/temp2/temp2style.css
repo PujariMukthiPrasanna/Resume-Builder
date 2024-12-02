@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: lavender;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
+}
+
+.nav-item1 a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-item1 {
+    height: 20px;
+    background-color: rgb(131, 33, 223);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.nav-item2 {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.nav-item2 a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-dash {
+    background-color: rgb(131, 33, 223);
+    width: fit-content;
+    padding: 15px;
+    height: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.nav-down {
+    background-color: rgb(131, 33, 223);
+    width: fit-content;
+    padding: 15px;
+    height: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+.form-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+
+#temp-image {
+    height: 600px;
+    width: 500px;
+    display: block;
+    border:2px solid rgb(131, 33, 223);
+}
+
+
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+#field{
+    background-color: #e5e5f0;
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #f4f4f5;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+input[type="file"] {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 100px;
+    margin-bottom: 20px;
+    width: 550px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(131, 33, 223);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* button:hover {
+    background-color: #333;
+} */
+
+label {
+    padding-top: 10px;
+}
+
+input {
+    width: 550px;
+}
+
+#fixed-column p {
+    padding-top: 5px;
+}
+
+
+#fixed-column {
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+
+#fixed-column h3 {
+    color: rgb(169, 99, 102);
+    font-size: 30px;
+    margin: 15px 0;
+    position: relative;
+    font-weight: bold;
+    /* text-align: center;
+    align-items: center; */
+}
+
+#fixed-column h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgb(169, 99, 102);
+}
+
+#fixed-column h3::after {
+    bottom: -5px;
+}
+
+#fixed-column{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#fixed-column p {
+    /* color: rgb(31, 153, 194); */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#fixed-column h4 {
+    color:rgb(169, 99, 102);
+    font-size: 18px;
+    margin: 15px 0;
+    position: relative;
+    /* text-align: center;
+    align-items: center; */
+}
+
+/* #fixed-column h4::before, */
+#fixed-column h4::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgb(169, 99, 102);
+}
+
+
+/* #fixed-column h4::before {
+    top: -13px;
+} */
+
+#fixed-column h4::after {
+    bottom: -15px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    *,
+    body {
+        overflow-x: hidden;
+    }
+
+    #fixed-column {
+        display: none;
+    }
+
+    /* FORM SECTION */
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #fixed-column {
+        display: none;
+    }
+}
